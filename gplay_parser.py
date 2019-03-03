@@ -10,8 +10,8 @@ import json
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from pprint import pprint
 
-# connectstr = "mongodb://gplayuser:gplay12345@cluster0-shard-00-00-pm6zd.mongodb.net:27017,cluster0-shard-00-01-pm6zd.mongodb.net:27017,cluster0-shard-00-02-pm6zd.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true"
-connectstr = "mongodb://mongodb:27017"
+connectstr = "mongodb://gplayuser:gplay12345@cluster0-shard-00-00-pm6zd.mongodb.net:27017,cluster0-shard-00-01-pm6zd.mongodb.net:27017,cluster0-shard-00-02-pm6zd.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true"
+# connectstr = "mongodb://mongodb:27017"
 
 class gplay_parser:
     """Парсер Google Play.
