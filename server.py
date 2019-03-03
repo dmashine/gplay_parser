@@ -54,4 +54,4 @@ if __name__ == "__main__":
     print("started")
     app = web.Application()
     app.add_routes([web.get('/', main)])
-    web.run_app(app)
+    web.run_app(app, port=80)

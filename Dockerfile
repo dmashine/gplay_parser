@@ -12,5 +12,5 @@ RUN apt-get update && apt-get -y upgrade && apt-get -y install \
     && pip3 install -r requirements.txt \
     && pip3 install virtualenv
 RUN python3 -m virtualenv --python=python3 virtualenv
-EXPOSE 8080
+EXPOSE 80
 CMD [ "python3", "server.py" ]
