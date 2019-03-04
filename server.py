@@ -11,6 +11,7 @@
 from aiohttp import web
 import asyncio
 import json
+import os
 # from pymongo import MongoClient
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from pprint import pprint
@@ -54,4 +55,5 @@ if __name__ == "__main__":
     print("started")
     app = web.Application()
     app.add_routes([web.get('/', main)])
-    web.run_app(app, port=80)
+    port = os.envoron.get("PORT", 80)
+    web.run_app(app, port=port)
