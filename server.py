@@ -55,5 +55,5 @@ if __name__ == "__main__":
     print("started")
     app = web.Application()
     app.add_routes([web.get('/', main)])
-    port = os.envoron.get("PORT", 80)
+    port = os.environ.get("PORT", 80)
     web.run_app(app, port=port)
